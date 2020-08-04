@@ -7,7 +7,7 @@ node{
    }
    
    stage('SonarQube Analysis') {
-        withSonarQubeEnv('sonar-6') { 
+        withSonarQubeEnv('SONAR-6.7.4') { 
           sh 'mvn sonar:sonar'
         }
     }
